@@ -1,8 +1,10 @@
 from fastapi import FastAPI, Depends
 from starlette.requests import Request
+import uvicorn
 
 from backend.core import config
 from backend.db.session import SessionLocal
+from backend.api.api_v1.routers.places import places_router
 
 app = FastAPI(
     title=config.PROJECT_NAME, docs_url="/api/docs", openapi_url="/api"
@@ -22,6 +24,7 @@ async def root():
     return {"message": "Hello World"}
 
 
-@app.get("/hello/{name}")
-async def say_hello(name: str):
-    return {"message": f"Hello {name}"}
+app.include_router(places_router, prefix="/api/v1", tags=["places"])
+
+if __name__ == "__main__":
+    uvicorn.run("main:app", host="0.0.0.0", reload=True, port=8888)
