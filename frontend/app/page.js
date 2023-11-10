@@ -6,16 +6,10 @@ import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css'; 
 import PopupGfg from "../components/pop"
 
-export default function Home() {
-  let animals = [ 
-    { name: 'Vasya', type: 'Cat', age: 4},
-    { name: 'Murka', type: 'Cat', age: 1.5 },
-    { name: 'Varna', type: 'Turtle', age: 21 },
-    { name: 'Kesha', type: 'Parrot', age: 3 },
-    { name: 'Nayda', type: 'Dog', age: 2.5 },
-    { name: 'Pufic', type: 'Humster', age: 2.5 },
-    { name: 'Randy', type: 'dog', age: 12 },
-];
+export default async function Home() {
+  const res = await fetch('http://127.0.0.1:8000/places?age__lte=1200');
+  const data = await res.json();
+  console.log(data)
   return (
     < section className='Text'>
       <div className='Aboba'>
