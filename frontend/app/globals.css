@@ -37,7 +37,6 @@
 
 .PoPit{
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 100;
+  top: 100px;
+  left: 100px;
 }

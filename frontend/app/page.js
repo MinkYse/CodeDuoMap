@@ -12,7 +12,6 @@ export default async function Home() {
   for (const el in data){
     console.log(data[el])
   }
-  //const place = JSON.parse(data[0])
   
   return (
     < section className='Text'>
