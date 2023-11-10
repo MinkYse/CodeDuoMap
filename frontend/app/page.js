@@ -1,4 +1,5 @@
 
+'use client'
 import Image from 'next/image'
 import styles from './page.module.css'
 import Popup from 'reactjs-popup'; 
@@ -15,18 +16,20 @@ export default function Home() {
         <Image
           src="/map2.jpg"
           width={1300}
-         height={800}
+          height={800}
+          alt='Image'
+          
        />
-       <PopupGfg />
-      </div>
-      <div  className='Progres'>
-
-      </div>
-      
+       <div className='Ass'>
+          <div> 
+          <Popup trigger={<button> Click to open popup </button>}  
+          position="left"> 
+            <div>GeeksforGeeks</div> 
+            <button className='"PoPit'>Click here</button> 
+          </Popup> 
+          </div> 
+        </div>
+       </div>
     </section>
-    
-   
-
   )
-
 }

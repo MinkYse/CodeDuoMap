@@ -13,11 +13,6 @@
   margin: 0;
 }
 
-
-
-
-
-
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -29,20 +24,23 @@
     justify-content: center;
     align-items: center;
     font-size: 40px;
+    z-index: -1;
+
+
+}
+.Ass{
+  position: relative;
+  display: inline-block;
+  justify-content: center;
+    align-items: center;
+    z-index: ;;
 
 }
 
 .PoPit{
   position: absolute;
-  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: #555;
-  color: white;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
+  justify-content: center;
+    align-items: center;
 }
