@@ -9,7 +9,7 @@ import { useEffect } from 'react'
 export default function PopupGfg(){ 
   return( 
   <div> 
-    <Popup trigger={<button> Click to open popup </button>}  
+    <Popup trigger={<button> ...</button>}  
      position="right center"> 
       <div>GeeksforGeeks</div> 
       <button className='"PoPit'>Click here</button> 
