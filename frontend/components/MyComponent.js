@@ -21,7 +21,7 @@ const MyComponent = async () => {
   return (
     <div className="selector" id="myElement">
       <PopupGfg/>
-      <style jsx>{`
+      <style jsx>{5`
         :root {
           --my-top-value: 50px;
           --my-left-value: 20px;

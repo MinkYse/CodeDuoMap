@@ -7,7 +7,6 @@ export default async function Cord(){
     const data = await res.json("utf8");
     const x = []
     for (const el in data){
-      
       x.push(data[el].latitude - 32.045630, data[el].longitude - 54.781751)
     }
     return x;
