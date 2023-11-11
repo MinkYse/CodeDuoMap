@@ -43,6 +43,10 @@
 }
 .text{
   color: #000;
+  height: auto;
+  font-size: small;
+  
+
 }
 
 :root {

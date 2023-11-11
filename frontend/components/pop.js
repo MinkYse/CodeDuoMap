@@ -13,8 +13,11 @@ export default async function PopupGfg(){
     
     x.push(data[el].latitude - 32.045630, data[el].longitude - 54.781751)
     result.push( 
-      <div className='text'> 
-          <Popup trigger={<button > {data[el].name}</button>}  
+      <div > 
+          <Popup trigger={<button > 
+            <Image
+          src="/icons\map_icon_1.svg"
+          /></button>}  
          position="right center"> 
           <div></div> 
           <h4 className='text'>{data[el].description}</h4> 
