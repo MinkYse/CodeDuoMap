@@ -11,6 +11,7 @@ export default async function Home() {
   const res = await fetch('http://127.0.0.1:8000/places?age__lte=1200');
   const data = await res.json('utf8');
   console.log(data)
+    const size = 40;
   return (
     < section className='Text'>
       <div className='Aboba'>
@@ -26,8 +27,8 @@ export default async function Home() {
        <div className='text'>
           <div className='container'> 
             <Popup trigger={<Image src="/icons/pin.png"
-            width={40}
-            height={40}/>}
+            width={size}
+            height={size}/>}
             position="right center"> 
             <div className='text'>wadawdaw</div> 
           <h4 className='color'>awwdawdaw</h4> 
@@ -38,8 +39,8 @@ export default async function Home() {
        <div className='text'>
           <div className='container1'> 
             <Popup trigger={<Image src="/icons/pin.png"
-            width={40}
-            height={40}/>}
+            width={size}
+            height={size}/>}
             position="right center"> 
             <div className='text'>wadawdaw</div> 
           <h4 className='color'>awwdawdaw</h4> 
@@ -50,8 +51,8 @@ export default async function Home() {
        <div className='text'>
           <div className='container2'> 
             <Popup trigger={<Image src="/icons/pin.png"
-            width={40}
-            height={40}/>}
+            width={size}
+            height={size}/>}
             position="right center"> 
             <div className='text'>wadawdaw</div> 
           <h4 className='color'>awwdawdaw</h4> 
@@ -62,8 +63,8 @@ export default async function Home() {
        <div className='text'>
           <div className='container3'> 
             <Popup trigger={<Image src="/icons/pin.png"
-            width={40}
-            height={40}/>}
+            width={size}
+            height={size}/>}
             position="right center"> 
             <div className='text'>wadawdaw</div> 
           <h4 className='color'>awwdawdaw</h4> 
@@ -74,8 +75,8 @@ export default async function Home() {
        <div className='text'>
           <div className='container4'> 
             <Popup trigger={<Image src="/icons/pin.png"
-            width={40}
-            height={40}/>}
+            width={size}
+            height={size}/>}
             position="right center"> 
             <div className='text'>wadawdaw</div> 
           <h4 className='color'>awwdawdaw</h4> 
@@ -86,8 +87,8 @@ export default async function Home() {
        <div className='text'>
           <div className='container5'> 
             <Popup trigger={<Image src="/icons/pin.png"
-            width={40}
-            height={40}/>}
+            width={size}
+            height={size}/>}
             position="right center"> 
             <div className='text'>wadawdaw</div> 
           <h4 className='color'>awwdawdaw</h4> 
@@ -98,37 +99,81 @@ export default async function Home() {
        <div className='text'>
           <div className='container6'> 
             <Popup trigger={<Image src="/icons/pin.png"
-            width={40}
-            height={40}/>}
-            position="right center"> 
-            <div className='text'>wadawdaw</div> 
-          <h4 className='color'>awwdawdaw</h4> 
-        </Popup> 
+            width={size}
+            height={size}/>}
+            position="right center">
+            <div className='text'>wadawdaw</div>
+          <h4 className='color'>awwdawdaw</h4>
+        </Popup>
       </div> 
        </div>
 
        <div className='text'>
           <div className='container7'> 
             <Popup trigger={<Image src="/icons/pin.png"
-            width={40}
-            height={40}/>}
-            position="right center"> 
-            <div className='text'>wadawdaw</div> 
-          <h4 className='color'>awwdawdaw</h4> 
-        </Popup> 
+            width={size}
+            height={size}/>}
+            position="right center">
+            <div className='text'>wadawdaw</div>
+          <h4 className='color'>awwdawdaw</h4>
+        </Popup>
       </div> 
        </div>
 
        <div className='text'>
           <div className='container8'> 
             <Popup trigger={<Image src="/icons/pin.png"
-            width={40}
-            height={40}/>}
-            position="right center"> 
-            <div className='text'>wadawdaw</div> 
-          <h4 className='color'>awwdawdaw</h4> 
-        </Popup> 
+            width={size}
+            height={size}/>}
+            position="right center">
+            <div className='text'>wadawdaw</div>
+          <h4 className='color'>awwdawdaw</h4>
+        </Popup>
       </div> 
+       </div>
+        <div className='text'>
+          <div className='container9'>
+            <Popup trigger={<Image src="/icons/pin.png"
+            width={size}
+            height={size}/>}
+            position="right center">
+            <div className='text'>wadawdaw</div>
+          <h4 className='color'>awwdawdaw</h4>
+        </Popup>
+      </div>
+       </div>
+        <div className='text'>
+          <div className='container10'>
+            <Popup trigger={<Image src="/icons/pin.png"
+            width={size}
+            height={size}/>}
+            position="right center">
+            <div className='text'>wadawdaw</div>
+          <h4 className='color'>awwdawdaw</h4>
+        </Popup>
+      </div>
+       </div>
+        <div className='text'>
+          <div className='container11'>
+            <Popup trigger={<Image src="/icons/pin.png"
+            width={size}
+            height={size}/>}
+            position="right center">
+            <div className='text'>wadawdaw</div>
+          <h4 className='color'>awwdawdaw</h4>
+        </Popup>
+      </div>
+       </div>
+        \<div className='text'>
+          <div className='container12'>
+            <Popup trigger={<Image src="/icons/pin.png"
+            width={size}
+            height={size}/>}
+            position="right center">
+            <div className='text'>wadawdaw</div>
+          <h4 className='color'>awwdawdaw</h4>
+        </Popup>
+      </div>
        </div>
        
     </section>

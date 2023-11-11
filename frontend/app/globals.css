@@ -95,6 +95,27 @@
   left: 350px;
 }
 
+.container9{
+  position: absolute;
+  top: 600px;
+  left: 850px;
+}
+.container10{
+  position: absolute;
+  top: 400px;
+  left: 750px;
+}
+.container11{
+  position: absolute;
+  top: 232px;
+  left: 580px;
+}
+.container12{
+  position: absolute;
+  top: 578px;
+  left: 346px;
+}
+
 .color {
   color: black;
   background-color: #f5f5f5;
