@@ -8,8 +8,11 @@ import PopupGfg from "../components/pop"
 
 export default async function Home() {
   const res = await fetch('http://127.0.0.1:8000/places?age__lte=1200');
-  const data = await res.json();
-  console.log(data)
+  const data = await res.json("utf8");
+  for (const el in data){
+    console.log(data[el])
+  }
+  
   return (
     < section className='Text'>
       <div className='Aboba'>
@@ -26,6 +29,7 @@ export default async function Home() {
           <div className=''> 
           <PopupGfg/>
           </div>
+        
        </div>
        
     </section>
