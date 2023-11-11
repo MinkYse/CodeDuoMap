@@ -37,6 +37,15 @@
 
 .PoPit{
   position: absolute;
-  top: 100px;
-  left: 100px;
+  top: 150px;
+  left: 150px;
+
+}
+.text{
+  color: #000;
+}
+
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #666;
 }

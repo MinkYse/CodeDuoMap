@@ -4,18 +4,20 @@
 import React from 'react'; 
 import Popup from 'reactjs-popup'; 
 import 'reactjs-popup/dist/index.css'; 
-import 'reactjs-popup/dist/index.css'; 
+
 
 export default async function PopupGfg(){ 
   const res = await fetch('http://127.0.0.1:8000/places?age__lte=1200');
   const data = await res.json("utf8");
   for (const el in data){
+    const x = data[el].latitude - 32.045630
+    const y = data[el].longitude - 54.781751
     return( 
-      <div > 
-        <Popup trigger={<button> {data[el].name}</button>}  
+      <div className='text'> 
+          <Popup trigger={<button> {data[el].name}</button>}  
          position="right center"> 
           <div></div> 
-          <h4>{data[el].description}</h4> 
+          <h4 className='text'>{data[el].description}</h4> 
         </Popup> 
       </div> 
       ) 

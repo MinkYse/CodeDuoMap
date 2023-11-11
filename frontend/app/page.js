@@ -21,8 +21,8 @@ export default async function Home() {
           height={800}
           />
        </div>
-       <div className='PoPit'>
-          <div className=''> 
+       <div >
+          <div className='PoPit'> 
           <PopupGfg/>
           </div>
         
