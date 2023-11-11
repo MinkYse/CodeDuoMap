@@ -5,9 +5,9 @@ import styles from './page.module.css'
 import Popup from 'reactjs-popup'; 
 import 'reactjs-popup/dist/index.css'; 
 import PopupGfg from "../components/pop"
+import MyComponent from '../components/MyComponent';
 
 export default async function Home() {
-  
   
   return (
     < section className='Text'>
@@ -22,8 +22,8 @@ export default async function Home() {
           />
        </div>
        <div >
-          <div className='PoPit'> 
-          <PopupGfg/>
+          <div> 
+             <MyComponent/>
           </div>
         
        </div>
