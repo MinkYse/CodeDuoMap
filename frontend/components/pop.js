@@ -1,5 +1,3 @@
-
-
 'use client'
 import React from 'react'; 
 import Popup from 'reactjs-popup'; 
@@ -16,7 +14,7 @@ export default async function PopupGfg(){
     x.push(data[el].latitude - 32.045630, data[el].longitude - 54.781751)
     result.push( 
       <div className='text'> 
-          <Popup trigger={<button> {data[el].name}</button>}  
+          <Popup trigger={<button > {data[el].name}</button>}  
          position="right center"> 
           <div></div> 
           <h4 className='text'>{data[el].description}</h4> 
@@ -25,6 +23,7 @@ export default async function PopupGfg(){
       ) 
   }
   console.log(x)
-  return result;
+  return [result];
 
+  
 };

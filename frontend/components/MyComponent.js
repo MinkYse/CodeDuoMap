@@ -1,16 +1,16 @@
 // components/MyComponent.js
 import { useEffect } from 'react';
 import PopupGfg from "../components/pop";
-import  x from "../components/pop";
+import Cord from "../components/cord";
 
 const MyComponent = async () => {
   useEffect( () => {
-    const val =  PopupGfg()
-    console.log(x[0])
+    const val = Cord()
+
     // Получение данных из внешнего источника (здесь использованы фиктивные значения)
     const externalData = {
-      topValue:  "20px",
-      leftValue: '30px',
+      topValue:  "200px",
+      leftValue: '320px',
     };
 
     // Применение данных к пользовательским переменным CSS
