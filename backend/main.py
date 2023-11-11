@@ -10,6 +10,7 @@ from filter import PlaceFilter
 from sqlalchemy import event, select
 from sqlalchemy.engine import Engine
 from sqlalchemy.ext.asyncio import AsyncSession
+from fastapi.middleware.cors import CORSMiddleware
 
 from fastapi_filter import FilterDepends
 
@@ -25,6 +26,19 @@ def _set_sqlite_case_sensitive_pragma(dbapi_con, connection_record):
 
 
 app = FastAPI()
+
+origins = [
+    "http://localhost:3000",
+    "http://127.0.0.1:3000"
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.get("/places", response_model=List[PlaceOut])
