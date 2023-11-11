@@ -1,7 +1,7 @@
 from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_async_engine
 from typing import AsyncIterator
 
-engine = create_async_engine("sqlite+aiosqlite:///test3.db")
+engine = create_async_engine("sqlite+aiosqlite:///work.db")
 async_session = async_sessionmaker(engine, class_=AsyncSession)
 
 

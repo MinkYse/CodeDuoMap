@@ -1,5 +1,5 @@
-from sqlalchemy.orm import declarative_base
-from sqlalchemy import Column, Integer, String, Text, Float
+from sqlalchemy.orm import declarative_base, Mapped, relationship
+from sqlalchemy import Column, Integer, String, Text, Float, ForeignKey
 
 Base = declarative_base()
 
@@ -20,4 +20,6 @@ class Place(Base):
     description = Column(Text, nullable=False)
     latitude = Column(Float, nullable=False)
     longitude = Column(Float, nullable=False)
+    icon_id = Column(Integer, ForeignKey("icon.id"), name='icon', nullable=True)
+    icon: Mapped[Icon] = relationship(Icon, backref="icons", lazy="joined")
 

@@ -1,7 +1,7 @@
 import logging
 from typing import Any, List
 
-from models import Place
+from models import Place, Icon
 import uvicorn
 from fastapi import Depends, FastAPI
 from scheme import PlaceOut
@@ -46,7 +46,7 @@ async def get_addresses(
     place_filter: PlaceFilter = FilterDepends(PlaceFilter),
     db: AsyncSession = Depends(get_db),
 ) -> Any:
-    query = select(Place)
+    query = select(Place).join(Icon)
     query = place_filter.filter(query)
     query = place_filter.sort(query)
     result = await db.execute(query)
